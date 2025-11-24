@@ -21,7 +21,8 @@ img {
   display: block;
 }
 
-h1 {
+h1,
+p {
   margin: 0;
 }
 
@@ -162,4 +163,102 @@ header .container .header-button:focus {
 .hero .container .hero-picture {
   width: 570px;
   height: 716px;
+}
+
+.best .container .best-text {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.best .container .best-cards {
+  display: flex;
+  gap: 44px;
+  margin-bottom: 80px;
+}
+.best .container .best-h2 {
+  font-family: "Roboto Slab";
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 84px;
+  color: #224f34;
+  margin-bottom: 36px;
+}
+.best .container .best-p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #224f34;
+}
+.best .container .best-card-h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  color: #373737;
+  margin-bottom: 8px;
+}
+.best .container .best-card-text {
+  display: flex;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #454545;
+  justify-content: center;
+}
+.best .container .best-card-p1 {
+  width: 114px;
+  border-right: 1px solid #454545;
+  margin-right: 48px;
+}
+.best .container .rating {
+  display: flex;
+}
+.best .container .best-card-p {
+  margin-right: 8px;
+}
+.best .container .star {
+  flex-shrink: 0;
+}
+.best .container .best-picture-1 {
+  display: block;
+  background-color: rgb(183, 208, 193);
+  width: 430px;
+  height: 566px;
+  margin-bottom: 50px;
+}
+.best .container .best-picture-2 {
+  display: block;
+  background-color: rgb(196, 225, 207);
+  width: 430px;
+  height: 566px;
+  margin-bottom: 50px;
+}
+.best .container .best-picture-3 {
+  display: block;
+  background-color: rgb(217, 229, 220);
+  width: 430px;
+  height: 566px;
+  margin-bottom: 50px;
+}
+.best .container .best-button {
+  width: 224px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #224f34;
+  border-radius: 3px;
+  background-color: transparent;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #224f34;
+  gap: 18px;
+  margin: 0 auto;
+}
+.best .container .arrow-right {
+  fill: #224f34;
 }/*# sourceMappingURL=main.css.map */
