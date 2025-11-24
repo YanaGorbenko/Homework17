@@ -1,0 +1,79 @@
+header {
+  background-color: #c2efd4;
+  .container {
+    display: flex;
+    font-family: 'Poppins';
+    align-items: center;
+
+    .logo {
+      margin-right: 378px;
+      transition: opacity 250ms ease;
+    }
+    .logo:hover,
+    .logo:focus {
+      opacity: 70%;
+    }
+    .header-nav {
+      margin-right: 184px;
+    }
+
+    .header-nav-list {
+      display: flex;
+      gap: 58px;
+    }
+
+    .header-link {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 33px;
+      text-transform: uppercase;
+      color: #224f34;
+      padding: 62px 0;
+      display: block;
+      transition: font-size 250ms ease;
+    }
+    .header-link:hover,
+    .header-link:focus {
+      font-size: 26px;
+    }
+    .bag-svg {
+      margin-right: 56px;
+      position: relative;
+      transition: background-color 300ms ease;
+    }
+    .ellipse {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #10ff70;
+      box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.15);
+      border-radius: 50%;
+      left: 22px;
+      top: 22px;
+    }
+    .bag-svg:hover .ellipse,
+    .bag-svg:focus .ellipse {
+      background-color: #2e6b46;
+    }
+    .header-button {
+      box-sizing: border-box;
+      border: 2px solid #224f34;
+      border-radius: 3px;
+      width: 142px;
+      height: 52px;
+      background-color: transparent;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: #224f34;
+      transition: background-color 300ms ease, color 300ms ease;
+    }
+
+    .header-button:hover,
+    .header-button:focus {
+      background-color: #224f34;
+      color: #fff;
+    }
+  }
+}

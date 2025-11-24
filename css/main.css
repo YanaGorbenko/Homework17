@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1420px;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #c2efd4;
+}
+header .container {
+  display: flex;
+  font-family: "Poppins";
+  align-items: center;
+}
+header .container .logo {
+  margin-right: 378px;
+  transition: opacity 250ms ease;
+}
+header .container .logo:hover,
+header .container .logo:focus {
+  opacity: 70%;
+}
+header .container .header-nav {
+  margin-right: 184px;
+}
+header .container .header-nav-list {
+  display: flex;
+  gap: 58px;
+}
+header .container .header-link {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #224f34;
+  padding: 62px 0;
+  display: block;
+  transition: font-size 250ms ease;
+}
+header .container .header-link:hover,
+header .container .header-link:focus {
+  font-size: 26px;
+}
+header .container .bag-svg {
+  margin-right: 56px;
+  position: relative;
+  transition: background-color 300ms ease;
+}
+header .container .ellipse {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #10ff70;
+  box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  left: 22px;
+  top: 22px;
+}
+header .container .bag-svg:hover .ellipse,
+header .container .bag-svg:focus .ellipse {
+  background-color: #2e6b46;
+}
+header .container .header-button {
+  box-sizing: border-box;
+  border: 2px solid #224f34;
+  border-radius: 3px;
+  width: 142px;
+  height: 52px;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #224f34;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+header .container .header-button:hover,
+header .container .header-button:focus {
+  background-color: #224f34;
+  color: #fff;
+}
+
+.hero {
+  background-color: #c2efd4;
+  padding-top: 150px;
+  padding-bottom: 164px;
+}
+.hero .container {
+  display: flex;
+}
+.hero .container .hero-text {
+  margin-right: 160px;
+}
+.hero .container .hero-h1 {
+  width: 650px;
+  font-family: "Rufina";
+  font-weight: 700;
+  font-size: 86px;
+  line-height: 106px;
+  color: #224f34;
+  margin-bottom: 26px;
+}
+.hero .container .hero-p {
+  width: 564px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 220%;
+  color: #267d49;
+  margin-bottom: 54px;
+}
+.hero .container .hero-button {
+  width: 258px;
+  height: 74px;
+  background-color: hsl(144, 40%, 22%);
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  box-shadow: 6px 33px 59px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  border-color: hsl(144, 40%, 22%);
+  transition: opacity 300ms ease;
+}
+.hero .container .hero-button:hover,
+.hero .container .hero-button:focus {
+  opacity: 70%;
+}
+.hero .container .hero-picture {
+  width: 570px;
+  height: 716px;
+}/*# sourceMappingURL=main.css.map */
