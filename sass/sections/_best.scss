@@ -1,4 +1,7 @@
 .best {
+  padding-top: 114px;
+  padding-bottom: 184px;
+
   .container {
     .best-text {
       text-align: center;
@@ -93,7 +96,20 @@
       color: #224f34;
       gap: 18px;
       margin: 0 auto;
+      transition: background-color 500ms ease, color 500ms ease;
     }
+
+    .best-button:hover,
+    .best-button:focus {
+      background-color: #224f34;
+      color: #fff;
+      transition: fill 500ms ease;
+    }
+    .best-button:hover .arrow-right,
+    .best-button:focus .arrow-right {
+      fill: #fff;
+    }
+
     .arrow-right {
       fill: #224f34;
     }

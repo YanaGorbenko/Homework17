@@ -165,6 +165,10 @@ header .container .header-button:focus {
   height: 716px;
 }
 
+.best {
+  padding-top: 114px;
+  padding-bottom: 184px;
+}
 .best .container .best-text {
   text-align: center;
   margin-bottom: 80px;
@@ -258,7 +262,102 @@ header .container .header-button:focus {
   color: #224f34;
   gap: 18px;
   margin: 0 auto;
+  transition: background-color 500ms ease, color 500ms ease;
+}
+.best .container .best-button:hover,
+.best .container .best-button:focus {
+  background-color: #224f34;
+  color: #fff;
+  transition: fill 500ms ease;
+}
+.best .container .best-button:hover .arrow-right,
+.best .container .best-button:focus .arrow-right {
+  fill: #fff;
 }
 .best .container .arrow-right {
   fill: #224f34;
+}
+
+.products {
+  padding-bottom: 194px;
+}
+.products .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.products .container .products-h2 {
+  font-family: "Roboto Slab";
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 66px;
+  color: #224f34;
+  margin-bottom: 70px;
+}
+.products .container .products-list {
+  display: flex;
+  gap: 100px;
+  margin-bottom: 82px;
+}
+.products .container .products-link {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #454545;
+  transition: border-bottom 400ms ease;
+}
+.products .container .products-link:hover,
+.products .container .products-link:focus {
+  border-bottom: 2px solid #224f34;
+}
+.products .container .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 82px 35px;
+}
+.products .container .products-picture {
+  width: 318px;
+  height: 378px;
+  display: block;
+  overflow: hidden;
+}
+.products .container .picture-2 {
+  background-color: #eaebf0;
+}
+.products .container .picture-8 {
+  background-color: #e6f1e9;
+}
+.products .container .product-card-h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  color: #373737;
+}
+.products .container .product-card-text {
+  display: flex;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #454545;
+  justify-content: center;
+}
+.products .container .product-card-p1 {
+  width: 114px;
+  border-right: 1px solid #454545;
+  margin-right: 48px;
+}
+.products .container .rating {
+  display: flex;
+}
+.products .container .product-card-p {
+  margin-right: 8px;
+}
+.products .container .star {
+  flex-shrink: 0;
 }/*# sourceMappingURL=main.css.map */
