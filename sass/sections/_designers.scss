@@ -1,0 +1,58 @@
+.designers {
+  padding-bottom: 250px;
+  .container {
+    text-align: center;
+    .designers-h2 {
+      font-family: 'Roboto Slab';
+      font-weight: 500;
+      font-size: 50px;
+      line-height: 66px;
+      color: #224f34;
+      margin-bottom: 50px;
+    }
+
+    .designers-p {
+      font-family: 'Poppins';
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 33px;
+      color: #224f34;
+      margin-bottom: 72px;
+    }
+    .designers-list {
+      display: flex;
+      gap: 42px;
+    }
+    .designers-picture {
+      width: 430px;
+      height: 566px;
+      margin-bottom: 24px;
+      display: block;
+    }
+    .picture-1 {
+      display: block;
+      background-color: #d3e2d7;
+      overflow: hidden;
+    }
+    .picture-1 img {
+      display: block;
+      margin: 50px auto 0;
+    }
+    .designers-h3 {
+      font-family: 'Poppins';
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 45px;
+      color: #373737;
+      margin-bottom: 4px;
+    }
+    .designers-card-p {
+      font-family: 'Poppins';
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 143%;
+      color: #373737;
+      width: 420px;
+    }
+  }
+}

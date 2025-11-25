@@ -22,6 +22,8 @@ img {
 }
 
 h1,
+h2,
+h3,
 p {
   margin: 0;
 }
@@ -438,4 +440,286 @@ header .container .header-button:focus {
 .exclusive .container .exclusive-button:hover,
 .exclusive .container .exclusive-button:focus {
   opacity: 70%;
+}
+
+.designers {
+  padding-bottom: 250px;
+}
+.designers .container {
+  text-align: center;
+}
+.designers .container .designers-h2 {
+  font-family: "Roboto Slab";
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 66px;
+  color: #224f34;
+  margin-bottom: 50px;
+}
+.designers .container .designers-p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #224f34;
+  margin-bottom: 72px;
+}
+.designers .container .designers-list {
+  display: flex;
+  gap: 42px;
+}
+.designers .container .designers-picture {
+  width: 430px;
+  height: 566px;
+  margin-bottom: 24px;
+  display: block;
+}
+.designers .container .picture-1 {
+  display: block;
+  background-color: #d3e2d7;
+  overflow: hidden;
+}
+.designers .container .picture-1 img {
+  display: block;
+  margin: 50px auto 0;
+}
+.designers .container .designers-h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  color: #373737;
+  margin-bottom: 4px;
+}
+.designers .container .designers-card-p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 143%;
+  color: #373737;
+  width: 420px;
+}
+
+.feedback {
+  padding-bottom: 192px;
+}
+.feedback .container .feedback-h2 {
+  font-family: "Roboto Slab";
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 66px;
+  color: #224f34;
+  text-align: center;
+  margin-bottom: 110px;
+}
+.feedback .container .feedback-cards {
+  display: flex;
+  gap: 36px;
+  margin-bottom: 124px;
+}
+.feedback .container .feedback-card {
+  width: 434px;
+  height: 252px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding-left: 20px;
+}
+.feedback .container .card-2 {
+  background-color: #c2efd4;
+}
+.feedback .container .card-2 .feedback-p {
+  color: #224f34;
+}
+.feedback .container .feedback-h3 {
+  font-family: "Roboto Serif";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  color: #224f34;
+  margin-bottom: 30px;
+}
+.feedback .container .feedback-p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6f6f6f;
+}
+.feedback .container .feedback-buttons {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.feedback .container .feedback-button {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  filter: drop-shadow(0px 7px 51px rgba(0, 0, 0, 0.2));
+  border: none;
+  border-radius: 4px;
+  transition: background-color 300ms ease;
+  padding: 12px 12px;
+}
+.feedback .container .feedback-button:hover {
+  background-color: #c2efd4;
+}
+
+footer {
+  background: #224f34;
+  color: #fff;
+  padding: 80px 0 174px;
+}
+footer .container .flex {
+  display: flex;
+  margin-bottom: 154px;
+}
+footer .container .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 24px;
+  gap: 144px;
+}
+footer .container .social {
+  margin-right: 216px;
+}
+footer .container .logo-link {
+  margin-bottom: 44px;
+  display: block;
+}
+footer .container .social-icon {
+  transition: width 300ms ease, height 300ms ease;
+}
+footer .container .social-icon:hover,
+footer .container .social-icon:focus {
+  width: 30px;
+  height: 30px;
+}
+footer .container .social-title {
+  font-family: "Roboto Slab";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+footer .container .social-list {
+  display: flex;
+  gap: 36px;
+}
+footer .container .menu-title,
+footer .container .form-title {
+  font-family: "Roboto Slab";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+footer .container .menu-link {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #c2efd4;
+  transition: font-size 300ms ease;
+}
+footer .container .footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+footer .container .menu-link:hover,
+footer .container .menu-link:focus {
+  font-size: 24px;
+}
+footer .container .form-input {
+  width: 486px;
+  height: 56px;
+  border-radius: 4px;
+  border: 3px solid #a3f3be;
+  background-color: transparent;
+  outline: none;
+  transition: border-color 250ms ease-in-out;
+  font-family: "Poppins";
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  padding-left: 28px;
+}
+footer .container .form-group {
+  position: relative;
+}
+footer .container .form-label {
+  position: absolute;
+  left: 28px;
+  top: 14px;
+  color: #777;
+  padding: 0 4px;
+  transition: transform 250ms ease-in-out, color 250ms ease-in-out, font-size 250ms ease-in-out;
+  font-family: "Poppins";
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+footer .container .form-input:focus + label,
+footer .container .form-input:not(:placeholder-shown) + label {
+  color: #a3f3be;
+  font-size: 14px;
+  transform: translateY(-36px);
+}
+footer .container .submit-btn {
+  width: 116px;
+  height: 56px;
+  background-color: #a3f3be;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #224f34;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  transition: opacity 300ms ease;
+}
+footer .container .submit-btn:hover,
+footer .container .submit-btn:focus {
+  opacity: 70%;
+}
+footer .container .footer-bottom {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+footer .container .footer-bottom::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 1051px;
+  height: 2px;
+  background-color: #a3f3be;
+  border-radius: 2px;
+}
+footer .container .legal-links {
+  display: flex;
+  gap: 35px;
+}
+footer .container .legal-link {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #ffffff;
+  transition: background-color 300ms ease, border-radius 300ms ease;
+}
+footer .container .legal-link:hover,
+footer .container .legal-link:focus {
+  background-color: #61786b;
+  border-radius: 6px;
 }/*# sourceMappingURL=main.css.map */
