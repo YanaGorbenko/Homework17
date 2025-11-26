@@ -76,4 +76,18 @@ header {
       color: #fff;
     }
   }
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    background-color: bisque;
+    z-index: 999;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: left 250ms ease;
+  }
 }

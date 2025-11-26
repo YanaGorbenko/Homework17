@@ -1,0 +1,104 @@
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 0 10px;
+  }
+
+  header {
+    .container {
+      .logo {
+        margin-right: 200px;
+      }
+
+      .header-nav {
+        margin-right: 120px;
+      }
+    }
+  }
+
+  .hero {
+    .container {
+      .hero-h1 {
+        width: 600px;
+      }
+
+      .hero-p {
+        width: 600px;
+      }
+    }
+  }
+
+  .best {
+    .container {
+      .best-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+      }
+    }
+  }
+
+  .products {
+    .container {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .products-list {
+        gap: 70px;
+      }
+    }
+  }
+
+  .exclusive {
+    .container {
+      flex-wrap: wrap;
+      justify-content: center;
+      .exclusive-picture {
+        order: 1;
+      }
+
+      .exclusive-p {
+        width: 550px;
+      }
+    }
+  }
+
+  .designers {
+    .container {
+      .designers-list {
+        flex-wrap: wrap;
+        row-gap: 40px;
+      }
+    }
+  }
+
+  .feedback {
+    .container {
+      .feedback-card {
+        width: 360px;
+      }
+    }
+  }
+
+  footer {
+    .container {
+      .flex {
+        flex-direction: column;
+      }
+      .grid {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
+        column-gap: 0;
+      }
+
+      .submit-btn {
+        right: 214px;
+      }
+
+      .footer-bottom::after {
+        width: 400px;
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    padding: 0 15px;
+  }
+
+  header {
+    .container {
+      .logo {
+        margin-right: 200px;
+      }
+
+      .header-nav {
+        margin-right: 120px;
+      }
+    }
+
+    .open-menu {
+      display: none;
+    }
+  }
+
+  .hero {
+    .container {
+      .hero-text {
+        margin-right: 120px;
+      }
+      .hero-h1 {
+        width: 500px;
+        font-size: 70px;
+      }
+
+      .hero-p {
+        width: 450px;
+        font-size: 24px;
+      }
+
+      .hero-picture img {
+        width: 500px;
+        height: 636px;
+      }
+    }
+  }
+
+  .best {
+    .container {
+      .best-picture-1,
+      .best-picture-2,
+      .best-picture-3 {
+        width: 350px;
+        height: 450px;
+      }
+
+      .best-picture-1 img,
+      .best-picture-2 img,
+      .best-picture-3 img {
+        width: 350px;
+        height: 450px;
+      }
+
+      .best-cards {
+        gap: 30px;
+      }
+    }
+  }
+
+  .products {
+    .container {
+      .cards {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+
+  .exclusive {
+    .container {
+      .exclusive-picture {
+        margin-right: 70px;
+        margin-left: 60px;
+      }
+
+      .exclusive-p {
+        width: 450px;
+      }
+    }
+  }
+
+  .designers {
+    .container {
+      .designers-picture {
+        width: 350px;
+        height: 450px;
+      }
+
+      .designers-picture img {
+        width: 350px;
+        height: 450px;
+      }
+
+      .designers-list {
+        gap: 26px;
+        justify-content: center;
+      }
+
+      .designers-card-p {
+        width: 300px;
+      }
+
+      .designers-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  .feedback {
+    .container {
+      .feedback-card {
+        width: 360px;
+      }
+    }
+  }
+
+  footer {
+    .container {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        column-gap: 30px;
+      }
+      .grid-1 {
+        margin: 0;
+        width: 100px;
+      }
+
+      .footer-bottom::after {
+        width: 750px;
+      }
+    }
+  }
+}

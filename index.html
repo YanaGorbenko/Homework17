@@ -38,6 +38,26 @@
           <div class="ellipse"></div>
         </a>
         <button class="header-button" type="button">LOGIN</button>
+        <button class="open-menu" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./images/sprite.svg#icon-menu3"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <button class="close-menu" data-menu-close>Close</button>
+        <a href="">LOGO</a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="" class="nav-link">Link1</a></li>
+            <li><a href="" class="nav-link">Link2</a></li>
+            <li><a href="" class="nav-link">Link3</a></li>
+          </ul>
+        </nav>
+        <ul class="contact-list">
+          <li><a href="tel:380563452617">+380563452617</a></li>
+          <li><a href="mailto:testuser@gmail.com">testuser@gmail.com</a></li>
+        </ul>
       </div>
     </header>
     <main>
@@ -544,7 +564,7 @@
             </ul>
           </div>
           <div class="grid">
-            <div>
+            <div class="grid-1">
               <h2 class="menu-title">SHOP</h2>
               <ul class="footer-menu">
                 <li class="menu-item">
@@ -561,7 +581,7 @@
                 </li>
               </ul>
             </div>
-            <div>
+            <div class="grid-1">
               <h2 class="menu-title">Company</h2>
               <ul class="footer-menu">
                 <li class="menu-item">
@@ -609,5 +629,7 @@
         </div>
       </div>
     </footer>
+    <script src="./modal.js"></script>
+    <script src="./mobile.js"></script>
   </body>
 </html>

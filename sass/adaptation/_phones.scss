@@ -1,0 +1,94 @@
+@media (max-width: 576px) {
+  .container {
+    max-width: 556px;
+    padding: 0 10px;
+  }
+
+  header {
+    .container {
+      .logo {
+        margin-right: 200px;
+      }
+
+      .header-nav {
+        margin-right: 120px;
+      }
+    }
+  }
+
+  .hero {
+    .container {
+      align-items: start;
+      .hero-h1 {
+        width: 400px;
+        font-size: 50px;
+      }
+
+      .hero-p {
+        width: 400px;
+      }
+    }
+  }
+
+  .products {
+    .container {
+      .cards {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .products-list {
+        flex-wrap: wrap;
+        column-gap: 180px;
+        row-gap: 20px;
+        justify-content: center;
+      }
+    }
+  }
+
+  .exclusive {
+    .container {
+      .exclusive-p {
+        width: 500px;
+      }
+    }
+  }
+
+  .designers {
+    .container {
+      .designers-list {
+        flex-wrap: wrap;
+        row-gap: 40px;
+      }
+    }
+  }
+
+  .feedback {
+    .container {
+      .feedback-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+
+  footer {
+    .container {
+      .flex {
+        flex-direction: column;
+      }
+      .grid {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
+        column-gap: 0;
+      }
+
+      .submit-btn {
+        right: 0;
+      }
+
+      .footer-bottom::after {
+        width: 200px;
+      }
+    }
+  }
+}
