@@ -1,8 +1,10 @@
 header {
   background-color: #c2efd4;
+  width: 100%;
+  font-family: 'Poppins';
   .container {
     display: flex;
-    font-family: 'Poppins';
+
     align-items: center;
 
     .logo {
@@ -112,5 +114,126 @@ header {
   .mobile-menu-link:hover,
   .mobile-menu-link:focus {
     font-size: 36px;
+  }
+
+  body.modal-open {
+    overflow: hidden;
+  }
+
+  .backdrop {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000033;
+    z-index: 100;
+    opacity: 1;
+    transition: opacity 500ms ease;
+  }
+
+  .backdrop.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 400ms ease;
+  }
+
+  .modal {
+    width: 700px;
+    height: 700px;
+    background-color: #2e6b46;
+    border-radius: 6px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    transition: transform 400ms ease;
+    padding: 50px 40px;
+  }
+
+  .backdrop.hidden .modal {
+    transform: translate(-50%, -50%) scale(0.4) rotate(-35deg);
+  }
+
+  .modal__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #2e6b46;
+    border: none;
+  }
+
+  .modal__close svg {
+    fill: #c2efd4;
+    transition: fill 300ms ease;
+  }
+
+  .modal__close:hover svg,
+  .modal__close:focus svg {
+    fill: #fff;
+  }
+
+  .form {
+    height: 100%;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .input-group {
+    margin-bottom: 25px;
+    position: relative;
+  }
+
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    outline: none;
+    transition: border-color 250ms ease-in-out;
+  }
+
+  .input-group input:focus {
+    border-color: #224f34;
+  }
+
+  .input-group label {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    color: #777;
+    padding: 0 4px;
+    transition: transform 250ms ease-in-out;
+  }
+
+  .input-group input:focus + label,
+  .input-group input:not(:placeholder-shown) + label {
+    color: #224f34;
+    font-size: 12px;
+    transform: translateY(-28px);
+  }
+
+  .checkbox {
+    margin-bottom: 20px;
+  }
+
+  .form button {
+    margin-top: 20px;
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid #224f34;
+    border-radius: 3px;
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    background-color: #224f34;
+    color: #fff;
+    transition: background-color 300ms ease, color 300ms ease;
   }
 }

@@ -40,10 +40,11 @@ button {
 
 header {
   background-color: #c2efd4;
+  width: 100%;
+  font-family: "Poppins";
 }
 header .container {
   display: flex;
-  font-family: "Poppins";
   align-items: center;
 }
 header .container .logo {
@@ -145,6 +146,111 @@ header .mobile-menu-link {
 header .mobile-menu-link:hover,
 header .mobile-menu-link:focus {
   font-size: 36px;
+}
+header body.modal-open {
+  overflow: hidden;
+}
+header .backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+header .backdrop.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 400ms ease;
+}
+header .modal {
+  width: 700px;
+  height: 700px;
+  background-color: #2e6b46;
+  border-radius: 6px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  transition: transform 400ms ease;
+  padding: 50px 40px;
+}
+header .backdrop.hidden .modal {
+  transform: translate(-50%, -50%) scale(0.4) rotate(-35deg);
+}
+header .modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #2e6b46;
+  border: none;
+}
+header .modal__close svg {
+  fill: #c2efd4;
+  transition: fill 300ms ease;
+}
+header .modal__close:hover svg,
+header .modal__close:focus svg {
+  fill: #fff;
+}
+header .form {
+  height: 100%;
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+header .input-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+header .input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 250ms ease-in-out;
+}
+header .input-group input:focus {
+  border-color: #224f34;
+}
+header .input-group label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: #777;
+  padding: 0 4px;
+  transition: transform 250ms ease-in-out;
+}
+header .input-group input:focus + label,
+header .input-group input:not(:placeholder-shown) + label {
+  color: #224f34;
+  font-size: 12px;
+  transform: translateY(-28px);
+}
+header .checkbox {
+  margin-bottom: 20px;
+}
+header .form button {
+  margin-top: 20px;
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid #224f34;
+  border-radius: 3px;
+  width: 120px;
+  height: 40px;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: #224f34;
+  color: #fff;
+  transition: background-color 300ms ease, color 300ms ease;
 }
 
 .hero {
@@ -603,6 +709,7 @@ footer {
   background: #224f34;
   color: #fff;
   padding: 80px 0 174px;
+  width: 100%;
 }
 footer .container .flex {
   display: flex;

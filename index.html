@@ -38,7 +38,9 @@
           </svg>
           <div class="ellipse"></div>
         </a>
-        <button class="header-button" type="button">LOGIN</button>
+        <button class="header-button" type="button" data-modal-open>
+          LOGIN
+        </button>
         <button class="open-menu" data-menu-open>
           <svg width="40" height="40">
             <use href="./images/sprite.svg#icon-menu3"></use>
@@ -63,6 +65,39 @@
             <li><a href="" class="mobile-menu-link">CONTACT</a></li>
           </ul>
         </nav>
+      </div>
+      <div class="backdrop hidden" data-modal>
+        <div class="modal">
+          <button class="modal__close" data-modal-close>
+            <svg width="30" height="30">
+              <use href="./images/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <form class="form">
+            <div class="input-group">
+              <input type="text" id="name" placeholder=" " required />
+              <label for="name">Your name</label>
+            </div>
+            <div class="input-group">
+              <input type="email" id="email" placeholder=" " required />
+              <label for="email">Your email</label>
+            </div>
+            <div class="input-group">
+              <input type="password" id="password" placeholder=" " required />
+              <label for="password">Your password</label>
+            </div>
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span class="checkmark">
+                <svg width="14" height="14">
+                  <use href="./images/sprite.svg#icon-checkmark"></use>
+                </svg>
+              </span>
+              <span>Agree with police of privacy</span>
+            </label>
+            <button>Register</button>
+          </form>
+        </div>
       </div>
     </header>
     <main>
