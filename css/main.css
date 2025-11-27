@@ -128,7 +128,7 @@ header .mobile-menu {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  transition: left 350ms ease;
+  transition: right 350ms ease;
 }
 header .mobile-menu-list {
   margin-top: 20px;
@@ -984,7 +984,7 @@ footer .container .legal-link:focus {
     fill: #fff;
   }
   header .mobile-menu.is-open {
-    left: 30%;
+    right: 0;
   }
   header .close-menu {
     border: none;
