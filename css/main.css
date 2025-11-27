@@ -1176,4 +1176,58 @@ footer .container .legal-link:focus {
   footer .container .footer-bottom::after {
     width: 200px;
   }
+}
+@media (max-width: 480px) {
+  .container {
+    max-width: 420px;
+    padding: 0 15px;
+  }
+  header .container .logo {
+    margin-right: 50px;
+  }
+  header .modal {
+    width: 300px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+  }
+  header .form {
+    width: 280px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  header .close-menu {
+    top: 20px;
+    right: 70px;
+  }
+  .hero .container {
+    align-items: start;
+    padding: 0 20px;
+  }
+  .hero .container .hero-h1 {
+    width: 320px;
+    font-size: 40px;
+    line-height: 70px;
+  }
+  .hero .container .hero-p {
+    width: 300px;
+    font-size: 16px;
+  }
+  .hero .container .hero-picture {
+    width: 300px;
+    height: 360px;
+  }
+  .hero .container .hero-picture img {
+    width: 300px;
+    height: 360px;
+  }
+  .exclusive .container .exclusive-p {
+    width: 350px;
+  }
+  footer .container .form-input {
+    width: 300px;
+  }
+  footer .container .footer-bottom::after {
+    width: 80px;
+  }
 }/*# sourceMappingURL=main.css.map */
