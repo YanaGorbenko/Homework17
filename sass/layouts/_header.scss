@@ -75,19 +75,42 @@ header {
       background-color: #224f34;
       color: #fff;
     }
+
+    .open-menu {
+      display: none;
+    }
   }
   .mobile-menu {
     position: fixed;
     top: 0;
     height: 100vh;
-    width: 100%;
-    left: -100%;
-    background-color: bisque;
+    width: 70%;
+    right: -100%;
+    background-color: #224f34;
     z-index: 999;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    transition: left 250ms ease;
+    transition: left 350ms ease;
+  }
+
+  .mobile-menu-list {
+    margin-top: 20px;
+  }
+
+  .mobile-menu-link {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 40px 0;
+    display: block;
+    transition: font-size 250ms ease;
+  }
+
+  .mobile-menu-link:hover,
+  .mobile-menu-link:focus {
+    font-size: 36px;
   }
 }

@@ -6,29 +6,56 @@
 
   header {
     .container {
+      padding-top: 40px;
       .logo {
-        margin-right: 200px;
+        margin-right: 500px;
       }
 
       .header-nav {
-        .header-nav {
-          display: flex;
-          align-items: center;
-          margin-left: auto;
-          display: none;
-        }
+        display: none;
+      }
+
+      .header-button {
+        margin-right: 20px;
+      }
+
+      .open-menu {
+        display: block;
+        background-color: #c2efd4;
+        border: none;
+      }
+
+      .open-menu svg {
+        fill: #224f34;
+        transition: fill 300ms ease;
+      }
+
+      .open-menu:hover svg,
+      .open-menu:focus svg {
+        fill: #fff;
       }
     }
 
     .mobile-menu.is-open {
-      left: 0;
+      left: 30%;
     }
 
     .close-menu {
-      width: 100px;
+      border: none;
+      background-color: #224f34;
       position: absolute;
       top: 20px;
       right: 20px;
+    }
+
+    .close-menu svg {
+      transition: fill 300ms ease;
+      fill: #fff;
+    }
+
+    .close-menu:hover svg,
+    .close-menu:focus svg {
+      fill: #c2efd4;
     }
   }
 

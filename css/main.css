@@ -113,19 +113,38 @@ header .container .header-button:focus {
   background-color: #224f34;
   color: #fff;
 }
+header .container .open-menu {
+  display: none;
+}
 header .mobile-menu {
   position: fixed;
   top: 0;
   height: 100vh;
-  width: 100%;
-  left: -100%;
-  background-color: bisque;
+  width: 70%;
+  right: -100%;
+  background-color: #224f34;
   z-index: 999;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  transition: left 250ms ease;
+  transition: left 350ms ease;
+}
+header .mobile-menu-list {
+  margin-top: 20px;
+}
+header .mobile-menu-link {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 40px 0;
+  display: block;
+  transition: font-size 250ms ease;
+}
+header .mobile-menu-link:hover,
+header .mobile-menu-link:focus {
+  font-size: 36px;
 }
 
 .hero {
@@ -751,9 +770,6 @@ footer .container .legal-link:focus {
   header .container .header-nav {
     margin-right: 120px;
   }
-  header .open-menu {
-    display: none;
-  }
   .hero .container .hero-text {
     margin-right: 120px;
   }
@@ -835,23 +851,48 @@ footer .container .legal-link:focus {
     max-width: 960px;
     padding: 0 15px;
   }
-  header .container .logo {
-    margin-right: 200px;
+  header .container {
+    padding-top: 40px;
   }
-  header .container .header-nav .header-nav {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+  header .container .logo {
+    margin-right: 500px;
+  }
+  header .container .header-nav {
     display: none;
   }
+  header .container .header-button {
+    margin-right: 20px;
+  }
+  header .container .open-menu {
+    display: block;
+    background-color: #c2efd4;
+    border: none;
+  }
+  header .container .open-menu svg {
+    fill: #224f34;
+    transition: fill 300ms ease;
+  }
+  header .container .open-menu:hover svg,
+  header .container .open-menu:focus svg {
+    fill: #fff;
+  }
   header .mobile-menu.is-open {
-    left: 0;
+    left: 30%;
   }
   header .close-menu {
-    width: 100px;
+    border: none;
+    background-color: #224f34;
     position: absolute;
     top: 20px;
     right: 20px;
+  }
+  header .close-menu svg {
+    transition: fill 300ms ease;
+    fill: #fff;
+  }
+  header .close-menu:hover svg,
+  header .close-menu:focus svg {
+    fill: #c2efd4;
   }
   .hero {
     padding-top: 100px;
@@ -907,7 +948,7 @@ footer .container .legal-link:focus {
     padding: 0 10px;
   }
   header .container .logo {
-    margin-right: 200px;
+    margin-right: 350px;
   }
   header .container .header-nav {
     margin-right: 120px;
@@ -967,7 +1008,7 @@ footer .container .legal-link:focus {
     padding: 0 10px;
   }
   header .container .logo {
-    margin-right: 200px;
+    margin-right: 100px;
   }
   header .container .header-nav {
     margin-right: 120px;
