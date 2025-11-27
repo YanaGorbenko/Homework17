@@ -1060,6 +1060,18 @@ footer .container .legal-link:focus {
   header .container .header-nav {
     margin-right: 120px;
   }
+  header .modal {
+    width: 500px;
+    height: 500px;
+    background-color: #2e6b46;
+    border-radius: 6px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    transition: transform 400ms ease;
+    padding: 50px 40px;
+  }
   .hero .container .hero-h1 {
     width: 600px;
   }
