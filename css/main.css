@@ -1177,13 +1177,23 @@ footer .container .legal-link:focus {
     width: 200px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .container {
-    max-width: 420px;
-    padding: 0 15px;
+    max-width: 400px;
+    padding: 0 10px;
   }
   header .container .logo {
-    margin-right: 50px;
+    margin-right: 70px;
+  }
+  header .container .bag-svg {
+    margin-right: 20px;
+  }
+  header .container .header-button {
+    border-radius: 3px;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
   }
   header .modal {
     width: 300px;
@@ -1200,6 +1210,9 @@ footer .container .legal-link:focus {
     top: 20px;
     right: 70px;
   }
+  .hero {
+    padding-bottom: 100px;
+  }
   .hero .container {
     align-items: start;
     padding: 0 20px;
@@ -1213,6 +1226,15 @@ footer .container .legal-link:focus {
     width: 300px;
     font-size: 16px;
   }
+  .hero .container .hero-button {
+    width: 134px;
+    height: 44px;
+    background-color: hsl(144, 40%, 22%);
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+  }
   .hero .container .hero-picture {
     width: 300px;
     height: 360px;
@@ -1221,11 +1243,134 @@ footer .container .legal-link:focus {
     width: 300px;
     height: 360px;
   }
+  .best .container .best-h2 {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+  .best .container .best-p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .best .container .best-card-h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .best .container .best-card-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .best .container .best-card-p1 {
+    width: 80px;
+    border-right: 1px solid #454545;
+    margin-right: 48px;
+  }
+  .best .container .best-picture-1,
+  .best .container .best-picture-2,
+  .best .container .best-picture-3 {
+    width: 300px;
+    height: 406px;
+  }
+  .best .container .best-picture-1 img,
+  .best .container .best-picture-2 img,
+  .best .container .best-picture-3 img {
+    width: 300px;
+    height: 406px;
+  }
+  .products .container .products-h2 {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 50px;
+  }
+  .products .container .products-list {
+    gap: 100px;
+    row-gap: 30px;
+  }
+  .products .container .products-link {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
   .exclusive .container .exclusive-p {
     width: 350px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .exclusive .container .exclusive-h2 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .exclusive .container .exclusive-list {
+    display: flex;
+    gap: 34px;
+  }
+  .exclusive .container .exclusive-list-item {
+    width: 60px;
+    height: 60px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .exclusive .container .item-big {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .exclusive .container .exclusive-button {
+    width: 120px;
+    height: 44px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .exclusive .container .exclusive-picture {
+    width: 360px;
+    height: 450px;
+  }
+  .exclusive .container .exclusive-picture img {
+    width: 360px;
+    height: 450px;
+  }
+  .designers .container .designers-h2 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .designers .container .designers-p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .designers .container .designers-picture {
+    width: 300px;
+    height: 406px;
+  }
+  .designers .container .designers-picture img {
+    width: 300px;
+    height: 406px;
+  }
+  .designers .container .designers-h3 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .designers .container .designers-card-p {
+    font-size: 14px;
+    line-height: 20px;
+    width: 300px;
+  }
+  .feedback .container .feedback-h2 {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 70px;
+  }
+  .feedback .container .feedback-card {
+    width: 300px;
+  }
+  .feedback .container .feedback-h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .feedback .container .feedback-p {
+    font-size: 12px;
+    line-height: 20px;
   }
   footer .container .form-input {
-    width: 300px;
+    width: 280px;
   }
   footer .container .footer-bottom::after {
     width: 80px;
