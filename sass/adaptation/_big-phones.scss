@@ -1,52 +1,31 @@
 @media (max-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 556px;
     padding: 0 10px;
   }
 
   header {
     .container {
       .logo {
-        margin-right: 350px;
+        margin-right: 100px;
       }
 
       .header-nav {
         margin-right: 120px;
       }
     }
-
-    .modal {
-      width: 500px;
-      height: 500px;
-      background-color: #2e6b46;
-      border-radius: 6px;
-      position: relative;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1) rotate(0deg);
-      transition: transform 400ms ease;
-      padding: 50px 40px;
-    }
   }
 
   .hero {
     .container {
+      align-items: start;
       .hero-h1 {
-        width: 600px;
+        width: 400px;
+        font-size: 50px;
       }
 
       .hero-p {
-        width: 600px;
-      }
-    }
-  }
-
-  .best {
-    .container {
-      .best-cards {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
+        width: 400px;
       }
     }
   }
@@ -54,25 +33,22 @@
   .products {
     .container {
       .cards {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
       }
 
       .products-list {
-        gap: 70px;
+        flex-wrap: wrap;
+        column-gap: 180px;
+        row-gap: 20px;
+        justify-content: center;
       }
     }
   }
 
   .exclusive {
     .container {
-      flex-wrap: wrap;
-      justify-content: center;
-      .exclusive-picture {
-        order: 1;
-      }
-
       .exclusive-p {
-        width: 550px;
+        width: 500px;
       }
     }
   }
@@ -88,8 +64,9 @@
 
   .feedback {
     .container {
-      .feedback-card {
-        width: 360px;
+      .feedback-cards {
+        flex-wrap: wrap;
+        justify-content: center;
       }
     }
   }
@@ -106,11 +83,11 @@
       }
 
       .submit-btn {
-        right: 214px;
+        right: 0;
       }
 
       .footer-bottom::after {
-        width: 400px;
+        width: 200px;
       }
     }
   }

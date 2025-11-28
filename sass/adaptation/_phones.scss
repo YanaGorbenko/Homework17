@@ -1,93 +1,257 @@
 @media (max-width: 576px) {
   .container {
-    max-width: 556px;
+    max-width: 400px;
     padding: 0 10px;
   }
 
   header {
     .container {
       .logo {
-        margin-right: 100px;
+        margin-right: 70px;
       }
 
-      .header-nav {
-        margin-right: 120px;
+      .bag-svg {
+        margin-right: 20px;
       }
+
+      .header-button {
+        border-radius: 3px;
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    .modal {
+      width: 300px;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .form {
+      width: 280px;
+      height: 400px;
+      margin: 0 auto;
+    }
+
+    .close-menu {
+      top: 20px;
+      right: 70px;
+    }
+
+    .mobile-menu-link {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    .logo-mobile {
+      width: 94px;
+      height: 50px;
     }
   }
 
   .hero {
+    padding-bottom: 100px;
     .container {
       align-items: start;
+      padding: 0 20px;
       .hero-h1 {
-        width: 400px;
-        font-size: 50px;
+        width: 320px;
+        font-size: 40px;
+        line-height: 70px;
       }
 
       .hero-p {
-        width: 400px;
+        width: 300px;
+        font-size: 16px;
+      }
+      .hero-button {
+        width: 134px;
+        height: 44px;
+        background-color: hsl(144, 40%, 22%);
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+      }
+
+      .hero-picture {
+        width: 300px;
+        height: 360px;
+      }
+      .hero-picture img {
+        width: 300px;
+        height: 360px;
+      }
+    }
+  }
+
+  .best {
+    .container {
+      .best-h2 {
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 20px;
+      }
+      .best-p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .best-card-h3 {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      .best-card-text {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .best-card-p1 {
+        width: 80px;
+        border-right: 1px solid #454545;
+        margin-right: 48px;
+      }
+      .best-picture-1,
+      .best-picture-2,
+      .best-picture-3 {
+        width: 300px;
+        height: 406px;
+      }
+
+      .best-picture-1 img,
+      .best-picture-2 img,
+      .best-picture-3 img {
+        width: 300px;
+        height: 406px;
       }
     }
   }
 
   .products {
     .container {
-      .cards {
-        grid-template-columns: repeat(1, 1fr);
+      .products-h2 {
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 50px;
       }
-
       .products-list {
-        flex-wrap: wrap;
-        column-gap: 180px;
-        row-gap: 20px;
-        justify-content: center;
+        gap: 100px;
+        row-gap: 30px;
+      }
+      .products-link {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 30px;
       }
     }
   }
-
   .exclusive {
     .container {
       .exclusive-p {
-        width: 500px;
+        width: 350px;
+        font-size: 16px;
+        line-height: 22px;
+      }
+      .exclusive-h2 {
+        font-size: 40px;
+        line-height: 60px;
+      }
+
+      .exclusive-list {
+        display: flex;
+        gap: 34px;
+      }
+      .exclusive-list-item {
+        width: 60px;
+        height: 60px;
+        font-size: 12px;
+        line-height: 18px;
+      }
+      .item-big {
+        font-size: 24px;
+        line-height: 32px;
+      }
+      .exclusive-button {
+        width: 120px;
+        height: 44px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .exclusive-picture {
+        width: 360px;
+        height: 450px;
+      }
+      .exclusive-picture img {
+        width: 360px;
+        height: 450px;
       }
     }
   }
 
   .designers {
     .container {
-      .designers-list {
-        flex-wrap: wrap;
-        row-gap: 40px;
+      .designers-h2 {
+        font-size: 40px;
+        line-height: 60px;
+      }
+
+      .designers-p {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      .designers-picture {
+        width: 300px;
+        height: 406px;
+      }
+
+      .designers-picture img {
+        width: 300px;
+        height: 406px;
+      }
+      .designers-h3 {
+        font-size: 18px;
+        line-height: 26px;
+      }
+      .designers-card-p {
+        font-size: 14px;
+        line-height: 20px;
+        width: 300px;
       }
     }
   }
 
   .feedback {
     .container {
-      .feedback-cards {
-        flex-wrap: wrap;
-        justify-content: center;
+      .feedback-h2 {
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 70px;
+      }
+      .feedback-card {
+        width: 300px;
+      }
+
+      .feedback-h3 {
+        font-size: 16px;
+        line-height: 22px;
+      }
+      .feedback-p {
+        font-size: 12px;
+        line-height: 20px;
       }
     }
   }
-
   footer {
     .container {
-      .flex {
-        flex-direction: column;
-      }
-      .grid {
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 40px;
-        column-gap: 0;
-      }
-
-      .submit-btn {
-        right: 0;
+      .form-input {
+        width: 280px;
       }
 
       .footer-bottom::after {
-        width: 200px;
+        width: 80px;
       }
     }
   }

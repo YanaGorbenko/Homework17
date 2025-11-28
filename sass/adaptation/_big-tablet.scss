@@ -1,60 +1,85 @@
 @media (max-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 960px;
     padding: 0 15px;
   }
 
   header {
     .container {
+      padding-top: 40px;
       .logo {
-        margin-right: 200px;
+        margin-right: 500px;
       }
 
       .header-nav {
-        margin-right: 120px;
+        display: none;
       }
+
+      .header-button {
+        margin-right: 20px;
+      }
+
+      .open-menu {
+        display: block;
+        background-color: #c2efd4;
+        border: none;
+      }
+
+      .open-menu svg {
+        fill: #224f34;
+        transition: fill 300ms ease;
+      }
+
+      .open-menu:hover svg,
+      .open-menu:focus svg {
+        fill: #fff;
+      }
+    }
+
+    .mobile-menu.is-open {
+      right: 0;
+    }
+
+    .close-menu {
+      border: none;
+      background-color: #224f34;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .close-menu svg {
+      transition: fill 300ms ease;
+      fill: #fff;
+    }
+
+    .close-menu:hover svg,
+    .close-menu:focus svg {
+      fill: #c2efd4;
     }
   }
 
   .hero {
+    padding-top: 100px;
     .container {
-      .hero-text {
-        margin-right: 120px;
-      }
+      flex-direction: column-reverse;
+      align-items: center;
+
       .hero-h1 {
-        width: 500px;
-        font-size: 70px;
+        width: 780px;
       }
 
       .hero-p {
-        width: 450px;
-        font-size: 24px;
-      }
-
-      .hero-picture img {
-        width: 500px;
-        height: 636px;
+        width: 650px;
       }
     }
   }
 
   .best {
     .container {
-      .best-picture-1,
-      .best-picture-2,
-      .best-picture-3 {
-        width: 350px;
-        height: 450px;
-      }
-
-      .best-picture-1 img,
-      .best-picture-2 img,
-      .best-picture-3 img {
-        width: 350px;
-        height: 450px;
-      }
-
       .best-cards {
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
       }
     }
@@ -65,47 +90,32 @@
       .cards {
         grid-template-columns: repeat(3, 1fr);
       }
+
+      .products-picture {
+        width: 280px;
+        height: 360px;
+      }
     }
   }
 
   .exclusive {
     .container {
       .exclusive-picture {
-        margin-right: 70px;
-        margin-left: 60px;
+        margin-right: 10px;
+        margin-left: 10px;
       }
 
       .exclusive-p {
-        width: 450px;
+        width: 400px;
       }
     }
   }
 
   .designers {
     .container {
-      .designers-picture {
-        width: 350px;
-        height: 450px;
-      }
-
-      .designers-picture img {
-        width: 350px;
-        height: 450px;
-      }
-
       .designers-list {
-        gap: 26px;
-        justify-content: center;
-      }
-
-      .designers-card-p {
-        width: 300px;
-      }
-
-      .designers-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 40px;
       }
     }
   }
@@ -121,17 +131,13 @@
   footer {
     .container {
       .grid {
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 30px;
-        column-gap: 30px;
-      }
-      .grid-1 {
-        margin: 0;
-        width: 100px;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
+        column-gap: 0;
       }
 
       .footer-bottom::after {
-        width: 750px;
+        width: 600px;
       }
     }
   }

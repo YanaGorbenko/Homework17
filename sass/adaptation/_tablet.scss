@@ -1,76 +1,42 @@
 @media (max-width: 992px) {
   .container {
-    max-width: 960px;
-    padding: 0 15px;
+    max-width: 720px;
+    padding: 0 10px;
   }
 
   header {
     .container {
-      padding-top: 40px;
       .logo {
-        margin-right: 500px;
+        margin-right: 350px;
       }
 
       .header-nav {
-        display: none;
-      }
-
-      .header-button {
-        margin-right: 20px;
-      }
-
-      .open-menu {
-        display: block;
-        background-color: #c2efd4;
-        border: none;
-      }
-
-      .open-menu svg {
-        fill: #224f34;
-        transition: fill 300ms ease;
-      }
-
-      .open-menu:hover svg,
-      .open-menu:focus svg {
-        fill: #fff;
+        margin-right: 120px;
       }
     }
 
-    .mobile-menu.is-open {
-      right: 0;
-    }
-
-    .close-menu {
-      border: none;
-      background-color: #224f34;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
-
-    .close-menu svg {
-      transition: fill 300ms ease;
-      fill: #fff;
-    }
-
-    .close-menu:hover svg,
-    .close-menu:focus svg {
-      fill: #c2efd4;
+    .modal {
+      width: 500px;
+      height: 500px;
+      background-color: #2e6b46;
+      border-radius: 6px;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1) rotate(0deg);
+      transition: transform 400ms ease;
+      padding: 50px 40px;
     }
   }
 
   .hero {
-    padding-top: 100px;
     .container {
-      flex-direction: column-reverse;
-      align-items: center;
-
       .hero-h1 {
-        width: 780px;
+        width: 600px;
       }
 
       .hero-p {
-        width: 650px;
+        width: 600px;
       }
     }
   }
@@ -88,25 +54,25 @@
   .products {
     .container {
       .cards {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
 
-      .products-picture {
-        width: 280px;
-        height: 360px;
+      .products-list {
+        gap: 70px;
       }
     }
   }
 
   .exclusive {
     .container {
+      flex-wrap: wrap;
+      justify-content: center;
       .exclusive-picture {
-        margin-right: 10px;
-        margin-left: 10px;
+        order: 1;
       }
 
       .exclusive-p {
-        width: 400px;
+        width: 550px;
       }
     }
   }
@@ -130,14 +96,21 @@
 
   footer {
     .container {
+      .flex {
+        flex-direction: column;
+      }
       .grid {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 40px;
         column-gap: 0;
       }
 
+      .submit-btn {
+        right: 214px;
+      }
+
       .footer-bottom::after {
-        width: 600px;
+        width: 400px;
       }
     }
   }
