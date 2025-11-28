@@ -1178,7 +1178,7 @@ footer .container .legal-link:focus {
 }
 @media (max-width: 576px) {
   .container {
-    max-width: 400px;
+    max-width: 380px;
     padding: 0 10px;
   }
   header .container .logo {
@@ -1378,9 +1378,23 @@ footer .container .legal-link:focus {
     line-height: 20px;
   }
   footer .container .form-input {
-    width: 280px;
+    width: 300px;
+    height: 50px;
+  }
+  footer .container .form-label {
+    left: 14px;
+    top: 14px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  footer .container .submit-btn {
+    width: 80px;
+    height: 50px;
+    right: 60px;
+    font-size: 16px;
+    line-height: 22px;
   }
   footer .container .footer-bottom::after {
-    width: 80px;
+    width: 60px;
   }
 }/*# sourceMappingURL=main.css.map */
