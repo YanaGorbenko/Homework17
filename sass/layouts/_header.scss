@@ -7,8 +7,12 @@ header {
 
     align-items: center;
 
-    .logo {
+    .header-logo {
       margin-right: 378px;
+    }
+
+    .logo {
+      
       transition: opacity 250ms ease;
     }
     .logo:hover,

@@ -1,12 +1,8 @@
 .best {
   padding-top: 114px;
-  padding-bottom: 184px;
+  padding-bottom: 92px;
 
   .container {
-    .best-text {
-      text-align: center;
-      margin-bottom: 80px;
-    }
     .best-cards {
       display: flex;
       gap: 44px;
@@ -19,6 +15,7 @@
       line-height: 84px;
       color: #224f34;
       margin-bottom: 36px;
+      text-align: center;
     }
     .best-p {
       font-family: 'Poppins';
@@ -26,6 +23,8 @@
       font-size: 22px;
       line-height: 33px;
       color: #224f34;
+      margin-bottom: 80px;
+      text-align: center;
     }
     .best-card-h3 {
       font-family: 'Poppins';
@@ -59,26 +58,26 @@
     .star {
       flex-shrink: 0;
     }
+    .best-text {
+      padding-top: 50px;
+    }
     .best-picture-1 {
       display: block;
       background-color: rgb(183, 208, 193);
       width: 430px;
       height: 566px;
-      margin-bottom: 50px;
     }
     .best-picture-2 {
       display: block;
       background-color: rgb(196, 225, 207);
       width: 430px;
       height: 566px;
-      margin-bottom: 50px;
     }
     .best-picture-3 {
       display: block;
       background-color: rgb(217, 229, 220);
       width: 430px;
       height: 566px;
-      margin-bottom: 50px;
     }
     .best-button {
       width: 224px;

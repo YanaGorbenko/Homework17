@@ -1,9 +1,7 @@
 .products {
-  padding-bottom: 194px;
+  padding-top: 92px;
+  padding-bottom: 97px;
   .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
 
     .products-h2 {
@@ -16,9 +14,12 @@
     }
 
     .products-list {
+      width: 750px;
       display: flex;
       gap: 100px;
       margin-bottom: 82px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .products-link {
@@ -39,12 +40,24 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 82px 35px;
     }
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .product-text {
+      padding-top: 36px;
+    }
     .products-picture {
       width: 318px;
       height: 378px;
       display: block;
       overflow: hidden;
-      margin-bottom: 36px;
+    }
+    .products-picture img {
+      width: 318px;
+      height: 378px;
     }
     .picture-2 {
       background-color: #eaebf0;

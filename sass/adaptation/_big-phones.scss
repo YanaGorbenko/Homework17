@@ -6,7 +6,7 @@
 
   header {
     .container {
-      .logo {
+      .header-logo {
         margin-right: 100px;
       }
 
@@ -41,6 +41,7 @@
         column-gap: 180px;
         row-gap: 20px;
         justify-content: center;
+        width: 500px;
       }
     }
   }

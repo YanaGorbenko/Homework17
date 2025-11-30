@@ -6,7 +6,7 @@
 
   header {
     .container {
-      .logo {
+      .header-logo {
         margin-right: 70px;
       }
 
@@ -139,6 +139,7 @@
       .products-list {
         gap: 100px;
         row-gap: 30px;
+        width: 350px;
       }
       .products-link {
         font-size: 16px;

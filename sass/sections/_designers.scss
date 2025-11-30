@@ -1,5 +1,6 @@
 .designers {
-  padding-bottom: 250px;
+  padding-top: 109px;
+  padding-bottom: 125px;
   .container {
     text-align: center;
     .designers-h2 {
@@ -23,10 +24,13 @@
       display: flex;
       gap: 42px;
     }
+    .designers-text {
+      padding-top: 24px;
+    }
     .designers-picture {
       width: 430px;
       height: 566px;
-      margin-bottom: 24px;
+
       display: block;
     }
     .picture-1 {

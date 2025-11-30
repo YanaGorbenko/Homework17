@@ -43,8 +43,10 @@ header .container {
   display: flex;
   align-items: center;
 }
-header .container .logo {
+header .container .header-logo {
   margin-right: 378px;
+}
+header .container .logo {
   transition: opacity 250ms ease;
 }
 header .container .logo:hover,
@@ -307,11 +309,7 @@ header .form button {
 
 .best {
   padding-top: 114px;
-  padding-bottom: 184px;
-}
-.best .container .best-text {
-  text-align: center;
-  margin-bottom: 80px;
+  padding-bottom: 92px;
 }
 .best .container .best-cards {
   display: flex;
@@ -325,6 +323,7 @@ header .form button {
   line-height: 84px;
   color: #224f34;
   margin-bottom: 36px;
+  text-align: center;
 }
 .best .container .best-p {
   font-family: "Poppins";
@@ -332,6 +331,8 @@ header .form button {
   font-size: 22px;
   line-height: 33px;
   color: #224f34;
+  margin-bottom: 80px;
+  text-align: center;
 }
 .best .container .best-card-h3 {
   font-family: "Poppins";
@@ -365,26 +366,26 @@ header .form button {
 .best .container .star {
   flex-shrink: 0;
 }
+.best .container .best-text {
+  padding-top: 50px;
+}
 .best .container .best-picture-1 {
   display: block;
   background-color: rgb(183, 208, 193);
   width: 430px;
   height: 566px;
-  margin-bottom: 50px;
 }
 .best .container .best-picture-2 {
   display: block;
   background-color: rgb(196, 225, 207);
   width: 430px;
   height: 566px;
-  margin-bottom: 50px;
 }
 .best .container .best-picture-3 {
   display: block;
   background-color: rgb(217, 229, 220);
   width: 430px;
   height: 566px;
-  margin-bottom: 50px;
 }
 .best .container .best-button {
   width: 224px;
@@ -419,12 +420,10 @@ header .form button {
 }
 
 .products {
-  padding-bottom: 194px;
+  padding-top: 92px;
+  padding-bottom: 97px;
 }
 .products .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 .products .container .products-h2 {
@@ -436,9 +435,12 @@ header .form button {
   margin-bottom: 70px;
 }
 .products .container .products-list {
+  width: 750px;
   display: flex;
   gap: 100px;
   margin-bottom: 82px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .products .container .products-link {
   font-family: "Poppins";
@@ -458,12 +460,23 @@ header .form button {
   grid-template-columns: repeat(4, 1fr);
   gap: 82px 35px;
 }
+.products .container .product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.products .container .product-text {
+  padding-top: 36px;
+}
 .products .container .products-picture {
   width: 318px;
   height: 378px;
   display: block;
   overflow: hidden;
-  margin-bottom: 36px;
+}
+.products .container .products-picture img {
+  width: 318px;
+  height: 378px;
 }
 .products .container .picture-2 {
   background-color: #eaebf0;
@@ -504,17 +517,20 @@ header .form button {
 }
 
 .exclusive {
-  padding-bottom: 218px;
+  padding-top: 97px;
+  padding-bottom: 109px;
 }
 .exclusive .container {
   background-color: #c2efd4;
   display: flex;
 }
+.exclusive .container .exclusive-pic {
+  padding-right: 104px;
+  padding-left: 82px;
+}
 .exclusive .container .exclusive-picture {
   width: 482px;
   height: 596px;
-  margin-right: 104px;
-  margin-left: 82px;
 }
 .exclusive .container .exclusive-text {
   padding-top: 74px;
@@ -539,6 +555,7 @@ header .form button {
 .exclusive .container .exclusive-list {
   display: flex;
   gap: 34px;
+  margin-bottom: 40px;
 }
 .exclusive .container .exclusive-list-item {
   width: 100px;
@@ -555,12 +572,13 @@ header .form button {
   color: #224f34;
   box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.05);
   border-radius: 3px;
-  margin-bottom: 40px;
+  text-align: center;
 }
 .exclusive .container .item-big {
   font-weight: 600;
   font-size: 32px;
   line-height: 48px;
+  display: block;
 }
 .exclusive .container .exclusive-button {
   width: 234px;
@@ -582,7 +600,8 @@ header .form button {
 }
 
 .designers {
-  padding-bottom: 250px;
+  padding-top: 109px;
+  padding-bottom: 125px;
 }
 .designers .container {
   text-align: center;
@@ -607,10 +626,12 @@ header .form button {
   display: flex;
   gap: 42px;
 }
+.designers .container .designers-text {
+  padding-top: 24px;
+}
 .designers .container .designers-picture {
   width: 430px;
   height: 566px;
-  margin-bottom: 24px;
   display: block;
 }
 .designers .container .picture-1 {
@@ -641,6 +662,7 @@ header .form button {
 
 .feedback {
   padding-bottom: 192px;
+  padding-top: 125px;
 }
 .feedback .container .feedback-h2 {
   font-family: "Roboto Slab";
@@ -663,6 +685,7 @@ header .form button {
   padding-left: 20px;
   padding-bottom: 30px;
   padding-right: 25px;
+  padding-top: 2px;
 }
 .feedback .container .card-2 {
   background-color: #c2efd4;
@@ -870,7 +893,7 @@ footer .container .legal-link:focus {
     max-width: 1140px;
     padding: 0 15px;
   }
-  header .container .logo {
+  header .container .header-logo {
     margin-right: 200px;
   }
   header .container .header-nav {
@@ -909,9 +932,9 @@ footer .container .legal-link:focus {
   .products .container .cards {
     grid-template-columns: repeat(3, 1fr);
   }
-  .exclusive .container .exclusive-picture {
-    margin-right: 70px;
-    margin-left: 60px;
+  .exclusive .container .exclusive-pic {
+    padding-right: 70px;
+    padding-left: 60px;
   }
   .exclusive .container .exclusive-p {
     width: 450px;
@@ -960,7 +983,7 @@ footer .container .legal-link:focus {
   header .container {
     padding-top: 40px;
   }
-  header .container .logo {
+  header .container .header-logo {
     margin-right: 500px;
   }
   header .container .header-nav {
@@ -1025,9 +1048,13 @@ footer .container .legal-link:focus {
     width: 280px;
     height: 360px;
   }
-  .exclusive .container .exclusive-picture {
-    margin-right: 10px;
-    margin-left: 10px;
+  .products .container .products-picture img {
+    width: 280px;
+    height: 360px;
+  }
+  .exclusive .container .exclusive-pic {
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .exclusive .container .exclusive-p {
     width: 400px;
@@ -1053,7 +1080,7 @@ footer .container .legal-link:focus {
     max-width: 720px;
     padding: 0 10px;
   }
-  header .container .logo {
+  header .container .header-logo {
     margin-right: 350px;
   }
   header .container .header-nav {
@@ -1092,7 +1119,7 @@ footer .container .legal-link:focus {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .exclusive .container .exclusive-picture {
+  .exclusive .container .exclusive-pic {
     order: 1;
   }
   .exclusive .container .exclusive-p {
@@ -1125,7 +1152,7 @@ footer .container .legal-link:focus {
     max-width: 556px;
     padding: 0 10px;
   }
-  header .container .logo {
+  header .container .header-logo {
     margin-right: 100px;
   }
   header .container .header-nav {
@@ -1149,6 +1176,7 @@ footer .container .legal-link:focus {
     column-gap: 180px;
     row-gap: 20px;
     justify-content: center;
+    width: 500px;
   }
   .exclusive .container .exclusive-p {
     width: 500px;
@@ -1181,7 +1209,7 @@ footer .container .legal-link:focus {
     max-width: 380px;
     padding: 0 10px;
   }
-  header .container .logo {
+  header .container .header-logo {
     margin-right: 70px;
   }
   header .container .bag-svg {
@@ -1293,6 +1321,7 @@ footer .container .legal-link:focus {
   .products .container .products-list {
     gap: 100px;
     row-gap: 30px;
+    width: 350px;
   }
   .products .container .products-link {
     font-size: 16px;

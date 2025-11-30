@@ -7,7 +7,7 @@
   header {
     .container {
       padding-top: 40px;
-      .logo {
+      .header-logo {
         margin-right: 500px;
       }
 
@@ -95,14 +95,18 @@
         width: 280px;
         height: 360px;
       }
+      .products-picture img {
+        width: 280px;
+        height: 360px;
+      }
     }
   }
 
   .exclusive {
     .container {
-      .exclusive-picture {
-        margin-right: 10px;
-        margin-left: 10px;
+      .exclusive-pic {
+        padding-right: 10px;
+        padding-left: 10px;
       }
 
       .exclusive-p {
