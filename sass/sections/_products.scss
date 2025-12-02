@@ -14,12 +14,10 @@
     }
 
     .products-list {
-      width: 750px;
       display: flex;
+      justify-content: center;
       gap: 100px;
       margin-bottom: 82px;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     .products-link {
@@ -38,16 +36,12 @@
     .cards {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 82px 35px;
-    }
-    .product-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      gap: 46px 35px;
+      justify-content: center;
     }
 
     .product-text {
-      padding-top: 36px;
+      padding: 36px 16px;
     }
     .products-picture {
       width: 318px;

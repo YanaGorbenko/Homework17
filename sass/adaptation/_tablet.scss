@@ -55,8 +55,11 @@
     .container {
       .cards {
         grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
       }
-
+      .product-card {
+        width: 280px;
+      }
       .products-list {
         gap: 70px;
       }

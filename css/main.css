@@ -314,7 +314,7 @@ header .form button {
 .best .container .best-cards {
   display: flex;
   gap: 44px;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 .best .container .best-h2 {
   font-family: "Roboto Slab";
@@ -367,7 +367,7 @@ header .form button {
   flex-shrink: 0;
 }
 .best .container .best-text {
-  padding-top: 50px;
+  padding: 50px 30px;
 }
 .best .container .best-picture-1 {
   display: block;
@@ -435,12 +435,10 @@ header .form button {
   margin-bottom: 70px;
 }
 .products .container .products-list {
-  width: 750px;
   display: flex;
+  justify-content: center;
   gap: 100px;
   margin-bottom: 82px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .products .container .products-link {
   font-family: "Poppins";
@@ -458,15 +456,11 @@ header .form button {
 .products .container .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 82px 35px;
-}
-.products .container .product-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 46px 35px;
+  justify-content: center;
 }
 .products .container .product-text {
-  padding-top: 36px;
+  padding: 36px 16px;
 }
 .products .container .products-picture {
   width: 318px;
@@ -627,7 +621,7 @@ header .form button {
   gap: 42px;
 }
 .designers .container .designers-text {
-  padding-top: 24px;
+  padding: 24px 20px;
 }
 .designers .container .designers-picture {
   width: 430px;
@@ -657,7 +651,6 @@ header .form button {
   font-size: 22px;
   line-height: 143%;
   color: #373737;
-  width: 420px;
 }
 
 .feedback {
@@ -685,7 +678,7 @@ header .form button {
   padding-left: 20px;
   padding-bottom: 30px;
   padding-right: 25px;
-  padding-top: 2px;
+  padding-top: 6px;
 }
 .feedback .container .card-2 {
   background-color: #c2efd4;
@@ -1111,6 +1104,10 @@ footer .container .legal-link:focus {
   }
   .products .container .cards {
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .products .container .product-card {
+    width: 280px;
   }
   .products .container .products-list {
     gap: 70px;
@@ -1170,6 +1167,7 @@ footer .container .legal-link:focus {
   }
   .products .container .cards {
     grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
   }
   .products .container .products-list {
     flex-wrap: wrap;
